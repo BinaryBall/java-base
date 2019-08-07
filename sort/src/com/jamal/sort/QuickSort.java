@@ -10,7 +10,7 @@ package com.jamal.sort;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{40, 2, 11, 5, 15, 6, 90, 10, 1, 3, 60, 17, 8};
+        int[] nums = {40, 2, 11, 5, 15, 6, 90, 10};
         sort(nums, 0, nums.length - 1);
         print(nums);
     }
@@ -18,8 +18,11 @@ public class QuickSort {
     // 递归
     public static void sort(int[] nums, int leftBound, int rightBound) {
         if (leftBound >= rightBound) return;
+        // 分区值的下标位置
         int mid = partition(nums, leftBound, rightBound);
+        // 左分区排序
         sort(nums, leftBound, mid - 1);
+        // 右分区排序
         sort(nums, mid, rightBound);
     }
 
@@ -27,7 +30,7 @@ public class QuickSort {
     public static int partition(int[] nums, int leftBound, int rightBound) {
 
         // 分区点的值
-        int piovt = nums[rightBound];
+        int pivot = nums[rightBound];
 
         // 左边下标
         int left = leftBound;
@@ -36,10 +39,10 @@ public class QuickSort {
 
         while (left <= right) {
             // 找到第一个大于分区值的
-            while (left <= right && nums[left] <= piovt) left++;
+            while (left <= right && nums[left] <= pivot) left++;
 
             // 找到第一个小于分区值的
-            while (left <= right && nums[right] > piovt) right--;
+            while (left <= right && nums[right] > pivot) right--;
 
             // 将左右两边的值进行交换
             if (left < right) swap(nums, left, right);
