@@ -3,15 +3,15 @@ package com.jamal;
 import java.util.Random;
 
 /**
- *
+ * 双向链表实现的跳表
  */
-public class SimpleSkipList {
+public class DoubleLinkSkipList {
 
-    // 节点的类型
+    // 头节点
     private final static byte HEAD_NODE = (byte) -1;
-
+    // 数据节点
     private final static byte DATA_NODE = (byte) 0;
-
+    // 尾节点
     private final static byte TAIL_NODE = (byte) -1;
 
 
@@ -39,12 +39,12 @@ public class SimpleSkipList {
     private int size;
     //　层高
     private int level = 1;
-
+    // 随机函数
     private Random random;
+    // 最高层高
+    private static final int MAX_LEVEL = 16;
 
-    private static final int MAX_LEVEL = 3;
-
-    public SimpleSkipList(){
+    public DoubleLinkSkipList(){
         head = new Node(null,HEAD_NODE);
         tail = new Node(null,TAIL_NODE);
         head.right = tail;
@@ -118,9 +118,9 @@ public class SimpleSkipList {
         node.right = newNode;
 
         int currentLevel = 1;
-        // 建立索引层
+        // 建立索引层，随机建立层高
         while (random.nextDouble() < 0.5d){
-            if (currentLevel > MAX_LEVEL) break;
+
             // 索引大于当前索引层
             if (currentLevel >= level){
                 level++;
@@ -157,8 +157,12 @@ public class SimpleSkipList {
 
             newNode.up = indexNode;
 
+            // 将索引节点作为新的节点，继续往上建立索引（如果有索引的话）
             newNode = indexNode;
+
             currentLevel++;
+            // 当前层高大于最高层高时，跳出循环
+            if (currentLevel > MAX_LEVEL) break;
         }
         size ++;
     }
@@ -201,13 +205,15 @@ public class SimpleSkipList {
     }
 
     public static void main(String[] args) {
-        SimpleSkipList skipList = new SimpleSkipList();
+        DoubleLinkSkipList skipList = new DoubleLinkSkipList();
         for (int i = 1; i < 10; i++) {
             skipList.add(i);
         }
         System.out.println(skipList.size());
         System.out.println(skipList.contains(3));
+        System.out.println(skipList.contains(15));
         System.out.println(skipList.get(5));
+        System.out.println(skipList.get(15));
         System.out.println("删除前");
         skipList.dumpSkipList();
 

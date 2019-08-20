@@ -1,69 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f4c80bd-5953-49bd-8b56-bdb5d1e3804c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/src/com/jamal/sort/BucketSort.java" afterDir="false" />
+    <list default="true" id="22bc74cc-c1ae-48a9-a353-76a859e07391" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../binarySearch/src/com/jamal/binarySearch/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../binarySearch/src/com/jamal/binarySearch/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/skiplist/com/jamal/SimpleSkipList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/skiplist/com/jamal/SimpleSkipList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jamal/DoubleLinkSkipList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/RadixSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/RadixSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/out/production/sort/com/jamal/sort/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/src/com/jamal/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/src/com/jamal/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/src/com/jamal/sort/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/src/com/jamal/sort/RadixSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/src/com/jamal/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/src/com/jamal/sort/SelectionSort.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jamal/SkipList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="1276">
+              <caret line="102" column="53" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java">
+        <entry file="file://$PROJECT_DIR$/src/com/jamal/DoubleLinkSkipList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="205" column="28" lean-forward="true" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
-              <folding>
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>MAX_LEVEL</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -71,23 +45,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/jamal/SkipList.java" />
         <option value="$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java" />
+        <option value="$PROJECT_DIR$/src/com/jamal/SimpleSkipList1.java" />
+        <option value="$PROJECT_DIR$/src/com/jamal/DoubleLinkSkipList.java" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/maven/apache-maven-3.6.1" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="489" />
-    <option name="y" value="32" />
-    <option name="width" value="877" />
-    <option name="height" value="736" />
+    <option name="x" value="12" />
+    <option name="y" value="-18" />
+    <option name="width" value="1890" />
+    <option name="height" value="1107" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,13 +63,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="skiplist" type="b2602c69:ProjectViewProjectNode" />
               <item name="skiplist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skiplist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skiplist" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skiplist" type="b2602c69:ProjectViewProjectNode" />
@@ -118,22 +91,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jamal" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,22 +111,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleSkipList">
-    <configuration name="SimpleSkipList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jamal.SimpleSkipList" />
-      <module name="skiplist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jamal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SkipList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jamal.SkipList" />
+  <component name="RunManager">
+    <configuration name="DoubleLinkSkipList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jamal.DoubleLinkSkipList" />
       <module name="skiplist" />
       <extension name="coverage">
         <pattern>
@@ -176,34 +127,24 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleSkipList" />
-        <item itemvalue="Application.SkipList" />
+        <item itemvalue="Application.DoubleLinkSkipList" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\xiaoxiang\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="9f4c80bd-5953-49bd-8b56-bdb5d1e3804c" name="Default Changelist" comment="" />
-      <created>1565836003535</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1565836003535</updated>
-      <workItem from="1565836006711" duration="6875000" />
-      <workItem from="1565871408636" duration="8138000" />
-    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15013000" />
+    <option name="totallyTimeSpent" value="9568000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="28" width="1301" height="740" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19314079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32902184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -211,19 +152,18 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3633388" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.65139115" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30550623" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.24866785" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.43822077" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4635879" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -235,128 +175,46 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jamal/SkipList.java</url>
-          <line>38</line>
+          <url>file://$PROJECT_DIR$/src/com/jamal/DoubleLinkSkipList.java</url>
+          <line>71</line>
           <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jamal/SkipList.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java</url>
-          <line>177</line>
-          <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jamal/SimpleSkipList1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="95" selection-start-line="95" selection-end-line="103" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jamal/SkipList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="1276">
+          <caret line="102" column="53" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jamal/SimpleSkipList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jamal/DoubleLinkSkipList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="205" column="28" lean-forward="true" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
-          <folding>
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>skiplist</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
