@@ -46,4 +46,8 @@ public class PriorityQueue {
     public Integer dequeue(){
         return items[--head];
     }
+
+    public Integer[] getItems() {
+        return items;
+    }
 }

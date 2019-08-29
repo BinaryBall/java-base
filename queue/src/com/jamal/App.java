@@ -5,7 +5,8 @@ public class App {
 //        arrayQueue();
 //        linkQueue();
 //        circularQueue();
-        priorityQueue();
+//        priorityQueue();
+        doubleEndsQueue();
     }
 
     public static void arrayQueue(){
@@ -52,5 +53,16 @@ public class App {
         for (int i = 0;i<items.length;i++){
             System.out.print(items[i]);;
         }
+    }
+
+    private static void doubleEndsQueue(){
+        DoubleEndsQueue queue = new DoubleEndsQueue();
+        queue.enqueueFirst("1111");
+        queue.enqueueFirst("3333");
+        queue.enqueueLast("2222");
+        queue.enqueueLast("4444");
+        System.out.println(queue.dequeueFirst());
+        System.out.println(queue.dequeueLast());
+        queue.displayAll();
     }
 }
