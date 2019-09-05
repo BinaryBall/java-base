@@ -10,7 +10,7 @@ package com.jamal;
 public class App {
     public static void main(String[] args) {
 //        heap();
-        sort();
+        sort1();
     }
 
     public static void heap(){
@@ -29,7 +29,16 @@ public class App {
     public static void sort(){
         int[] a = {2,4,6,8,5,1,9,13,56,34,67,23};
         HeadSort sort = new HeadSort();
-        sort.sort(a,11);
+        sort.sort(a,12);
+        for (int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+
+    public static void sort1(){
+        int[] a = {2,4,6,8,5,1,9,13,56,34,67,23};
+        HeadSort1 sort = new HeadSort1();
+        sort.sort(a,12);
         for (int i=0;i<a.length;i++){
             System.out.print(a[i]+" ");
         }

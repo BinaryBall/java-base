@@ -1,7 +1,7 @@
 package com.jamal;
 
 /**
- * @author xiaoxiang
+ * @author xiaoxiang  https://www.cnblogs.com/hapjin/p/4622681.html
  * @title: Heap
  * @projectName heap
  * @description: TODO
@@ -20,7 +20,7 @@ public class Heap {
     }
 
     /**
-     * 堆的插入，采用从下往上的堆化
+     * 堆的插入，采用从下往上的堆化,需要浪费第一个存储空间，即数组下标1为堆顶
      * @param data
      */
     public void insert(int data) {
@@ -28,7 +28,8 @@ public class Heap {
         ++count;
         a[count] = data;
         int i = count;
-        while (i/2 > 0 && a[i] > a[i/2]) { // 自下往上堆化
+        //
+        while (i/2 > 0 && a[i] > a[i/2]) {
             swap(a, i, i/2); // swap() 函数作用：交换下标为 i 和 i/2 的两个元素
             i = i/2;
         }
@@ -45,6 +46,15 @@ public class Heap {
         heapify(a, count, 1);
     }
 
+    public int pop(){
+        if (count == 0) return -1; // 堆中没有数据
+        int temp = a[1];
+        a[1] = a[count];
+        a[count] = 0;
+        --count;
+        heapify(a, count, 1);
+        return temp;
+    }
 
     /**
      * 堆化，将最大的元素放到堆顶
