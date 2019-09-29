@@ -17,16 +17,37 @@ import org.jsoup.nodes.Document;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * jsoup ip 代理
- */
-public class HttpclientProxy {
+ * 网页采集 IP 被封，我该怎么办？
+ * 以豆瓣电影为例
+ *
+ * 添加ip代理，免费的ip代理比较慢，性能底下
+ * jsoup
+ * httpclient
+ * 伪造 User-Agent，每次请求随机设置一个 User-Agent
+ * 定时任务不要有规律 不要每隔2分钟请求一次，可以设置一个范围 1-5分钟，每次间隔时间随机的
+ *
+ * 手写 ip 代理池
+ *
+ * crawler
+ * 2019/9/29 16:34
+ *
+ * @author 曾小辉
+ **/
+public class CrawlerProxy {
 
+    // 存放代理ip的队列
     static ArrayBlockingQueue<String> queue = new ArrayBlockingQueue(20);
+
+    // 该网站能够获取到你当前访问的ip
     static String check_url = "http://2000019.ip138.com/";
 
+    // 每次能随机获取一个代理ip
     static String proxy_ip_url = "http://ip.jiangxianli.com/api/proxy_ip";
 
+    // 一次获取10个ip代理
     static String proxy_ip_list_url = "http://ip.jiangxianli.com/api/proxy_ips?page=1";
+
+    // 异步加载 https://www.ip.cn/
 
     public static void main(String[] args){
         try {
@@ -81,6 +102,35 @@ public class HttpclientProxy {
              * 从队列中获取ip
              */
             String[] ip_info = queue.take().split(",");
+
+            Document document = Jsoup.connect(check_url)
+                    .timeout(10000)
+                    // 设置ip
+                    .proxy(ip_info[0], Integer.parseInt(ip_info[1]))
+                    .get();
+            String info = document.select("body > p:nth-child(1)").first().ownText();
+
+            System.out.println(info);
+        }catch (Exception e){
+
+        }
+
+    }
+
+
+    /**
+     * 设置ip代理
+     */
+    public static void httpclientProxy(){
+        try {
+            if (queue.size() == 0) {
+                return;
+            }
+            System.out.println("取ip：" + queue.peek() + ",还剩代理数：" + queue.size());
+            /**
+             * 从队列中获取ip
+             */
+            String[] ip_info = queue.take().split(",");
             CloseableHttpClient client = HttpClients.createDefault();
             HttpGet httpGet = new HttpGet(check_url);
             HttpHost proxy = new HttpHost(ip_info[0], Integer.parseInt(ip_info[1]));
@@ -106,4 +156,5 @@ public class HttpclientProxy {
         }
 
     }
+
 }
