@@ -14,13 +14,16 @@ import java.util.concurrent.Executors;
 /**
  * crawler
  * 2019/9/30 17:20
+ * Java 爬虫性能太慢，试着更换你的架构
+ * Java 爬虫利器 webmagic，大爷你想试试吗？
+ * 都知道 webmagic 这些东西了，你还搞不定它？
  * 多线程爬虫
  * 采集 csdn 文章列表
  * 涉及到两个角色
  * 生产者：采集文章 url 存入阻塞队列
  * 消费者：从阻塞队列中取出 url 完成采集
  *
- * @author 曾小辉
+ * @author
  **/
 public class CrawlerCloud {
 

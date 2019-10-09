@@ -28,7 +28,7 @@ import java.util.Map;
  * crawler
  * 2019/9/29 16:32
  *
- * @author 曾小辉
+ * @author
  **/
 public class CrawleLogin {
 
@@ -40,9 +40,9 @@ public class CrawleLogin {
         // 登陆接口
         String login_url = "https://accounts.douban.com/j/mobile/login/basic";
 
-//        new CrawleLogin().setCookies(user_info_url);
+        new CrawleLogin().setCookies(user_info_url);
 //        new CrawleLogin().jsoupLogin(login_url,user_info_url);
-        new CrawleLogin().httpClientLogin(login_url,user_info_url);
+//        new CrawleLogin().httpClientLogin(login_url,user_info_url);
     }
 
     /**
@@ -55,14 +55,17 @@ public class CrawleLogin {
 
         Document document = Jsoup.connect(url)
                 // 手动设置cookies
-                .header("Cookie", "bid=NyqwcukiSHw; douban-fav-remind=1; __yadk_uid=7yuke9lL5hjpmXD5dry1qCGPPAFrvEge; trc_cookie_storage=taboola%2520global%253Auser-id%3D439917a7-a8eb-4fff-bd11-6717c9253b8f-tuct47cce2f; ll=\"118160\"; _pk_ref.100001.8cb4=%5B%22%22%2C%22%22%2C1569747339%2C%22https%3A%2F%2Fcn.bing.com%2F%22%5D; _pk_ses.100001.8cb4=*; __utma=30149280.933949496.1568948318.1568948318.1569747345.2; __utmc=30149280; __utmz=30149280.1569747345.2.2.utmcsr=cn.bing.com|utmccn=(referral)|utmcmd=referral|utmcct=/; __utmt=1; dbcl2=\"150968577:bB7eiyTqA0s\"; ck=S0XP; ap_v=0,6.0; push_noty_num=0; push_doumail_num=0; __utmv=30149280.15096; douban-profile-remind=1; _pk_id.100001.8cb4=b366dc92e126c244.1568948315.2.1569747378.1568948315.; __utmb=30149280.5.10.1569747345")
+                .header("Cookie", "push_noty_num=0; push_doumail_num=0; __utmv=30149280.15096; douban-profile-remind=1; _vwo_uuid_v2=D6B70333B716FC46F4E58135BBDB4414F|684457b0372138eeedc1d3828e244a55; _pk_ref.100001.8cb4=%5B%22%22%2C%22%22%2C1570525814%2C%22https%3A%2F%2Fcn.bing.com%2F%22%5D; _pk_ses.100001.8cb4=*; ap_v=0,6.0; __utma=30149280.933949496.1568948318.1569824493.1570525816.5; __utmc=30149280; __utmz=30149280.1570525816.5.4.utmcsr=cn.bing.com|utmccn=(referral)|utmcmd=referral|utmcct=/; dbcl2=\"150968577:MMn7VZsaPqU\"; ck=oPH9; _pk_id.100001.8cb4=b366dc92e126c244.1568948315.4.1570526614.1569824689.; __utmb=30149280.7.10.1570525816")
                 .get();
+        //
         if (document != null) {
+            // 获取豆瓣昵称节点
             Element element = document.select(".info h1").first();
             if (element == null) {
                 System.out.println("没有找到 .info h1 标签");
                 return;
             }
+            // 取出豆瓣节点昵称
             String userName = element.ownText();
             System.out.println("豆瓣我的网名为：" + userName);
         } else {

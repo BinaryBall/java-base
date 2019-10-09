@@ -24,6 +24,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 网页采集 IP 被封，我该怎么办？
+ * Java 爬虫 IP 被封，不要怕，换个服务器试试
  * 以豆瓣电影为例
  * <p>
  * 添加ip代理，免费的ip代理比较慢，性能底下
@@ -39,7 +40,7 @@ import java.util.concurrent.Executors;
  * crawler
  * 2019/9/29 16:34
  *
- * @author 曾小辉
+ * @author
  **/
 public class CrawlerProxy {
 
