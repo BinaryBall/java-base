@@ -3,6 +3,7 @@ package com.jamal.bloomfilter;
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,29 +14,34 @@ import java.util.List;
  * @author 曾小辉
  **/
 public class GuavaBloomFilterTest {
-
-    private static int size = 1000000;
-
-    private static BloomFilter<Integer> bloomFilter = BloomFilter.create(Funnels.integerFunnel(), size,0.01);
+    // bit 数组大小
+    private static int size = 10000;
+    // 布隆过滤器
+    private static BloomFilter<String> bloomFilter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), size, 0.03);
 
     public static void main(String[] args) {
+        // 先向布隆过滤器中添加 10000 个url
         for (int i = 0; i < size; i++) {
-            bloomFilter.put(i);
+            String url = "https://voice.hupu.com/nba/" + i;
+            bloomFilter.put(url);
         }
-
+        // 前10000个url不会出现误判
         for (int i = 0; i < size; i++) {
-            if (!bloomFilter.mightContain(i)) {
-                System.out.println("有坏人逃脱了");
+            String url = "https://voice.hupu.com/nba/" + i;
+            if (!bloomFilter.mightContain(url)) {
+                System.out.println("该 url 被采集过了");
             }
         }
 
-        List<Integer> list = new ArrayList<Integer>(1000);
-        for (int i = size + 10000; i < size + 20000; i++) {
-            if (bloomFilter.mightContain(i)) {
-                list.add(i);
+        List<String> list = new ArrayList<String>(1000);
+        // 再向布隆过滤器中添加 2000 个 url ，在这2000 个中就会出现误判了
+        // 误判的个数为 2000 * fpp
+        for (int i = size; i < size + 2000; i++) {
+            String url = "https://voice.hupu.com/nba/" + i;
+            if (bloomFilter.mightContain(url)) {
+                list.add(url);
             }
         }
-        System.out.println("有误伤的数量：" + list.size());
+        System.out.println("误判数量：" + list.size());
     }
-
 }
